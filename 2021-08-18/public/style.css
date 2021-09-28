@@ -1,0 +1,14 @@
+
+body {
+    padding: 0.2rem;
+    background: rgba(172, 183, 194, 0.582);
+}
+
+.card-head, img {
+    border-radius: 0.3rem;
+}
+
+.container {
+    border-radius: 0.5rem;
+    
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  {{>head}}
+  <body>
+    {{>nav}}
+    <main class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Pridėti naują UŽDUOTĮ</h5>
+                    <form method="POST" action="/new">
+                        <div class="mb-3">
+                            <label class="form-label">Užduotis</label>
+                            <input type="text" name="task" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Statusas</label>
+                            <select class="form-control" name="status">
+                                {{#each statuses}}
+                                    <option value="{{name}}">{{name}}</option>
+                                {{~/each}}
+                                
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Prioritetas</label>
+                            <select class="form-control" name="priority">
+                                {{#each priorities}}
+                                    <option value="{{name}}">{{name}}</option>
+                                {{~/each}}
+                                
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-success" type="submit">Pridėti</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+     {{>foot}}   
+  </body>
+</html>

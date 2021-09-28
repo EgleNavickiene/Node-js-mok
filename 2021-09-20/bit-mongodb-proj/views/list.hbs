@@ -1,0 +1,44 @@
+<h1>Įrašų sąrašas</h1>
+
+
+<div class="row d-flex align-items-start">
+    
+    <div class="col-3 d-flex">
+        <a href="/irasai/pridejimas">Pridėti naują įrašą</a>
+    </div>
+    <div class="col-3 d-flex">
+        <a href="/irasai">Rūšiuoti a-ž</a>
+    </div>
+    <div class="col-3 d-flex">
+        <a href="/irasai/rusiavimas/desc">Rūšiuoti ž-a</a>
+    </div>
+    <div class="col-3 d-flex">
+        <a href="/irasai/rusiavimas/data">Rūšiuoti pagal datą</a>
+    </div>
+    <div class="col-3 d-flex">
+        <a href="/">Paieška</a>
+    </div>
+</div>
+
+
+<table>
+    <tr>
+        <th>Pavadinimas</th>
+        <th>Turinys</th>
+        <th>Data</th>
+        <th>Veiksmas1</th>
+        <th>Peržiūra</th>
+         <th>Veiksmas2</th>
+    </tr>
+
+{{#each data}}
+    <tr>
+        <td>{{pavadinimas}}</td>
+        <td>{{turinys}}</td>
+        <td>{{data}}</td>
+        <td><a href="/irasai/edit/{{_id}}">Redaguoti</a></td>
+        <td><a href="/irasai/preview/{{_id}}">Peržiūra</a></td>
+        <td><a href="/irasai/delete/{{_id}}">Trinti</a></td>
+    </tr>
+    {{~/each}}
+</table>

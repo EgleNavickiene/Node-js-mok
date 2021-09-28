@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{>head}}
+    <body id="page-top">
+        {{>nav}}
+        <!-- Masthead-->
+        
+        <section class="page-section " id="about">
+            <div class="container mt-5">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase mt-6">REGISTRACIJŲ admin</h2>
+                             
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    {{#each register}}
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                {{name}}
+                            </h5>
+                            <p class="card-text">
+                                {{marke}}
+                            </p> 
+                            <p class="card-text">
+                                {{metai}}
+                            </p>
+                            <p class="card-text">
+                                {{problema}}
+                            </p>
+                                                 
+                        </div>
+                    </div>
+                    {{~/each}}
+
+                    <hr>
+                    
+                </div>                
+            </div>
+
+        </section>
+        
+       
+        <!-- Footer-->
+        {{>footer}}
+    </body>
+</html>

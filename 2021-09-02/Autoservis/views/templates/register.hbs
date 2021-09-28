@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{>head}}
+    <body id="page-top">
+        {{>nav}}
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                {{!-- <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." /> --}}
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">AUTOSERVISAS</h1>
+                <!-- Icon Divider iiiiiiiiiiiii    -->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Automobilių remontas</p>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <!-- About Section-->
+        <section class="page-section  mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase ">REGISTRACIJA</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>                
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    
+                    <hr>
+                    <form method="POST" action="/registracija">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Jūsų vardas</label>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" name="marke" id="marke" type="text" placeholder="Automobilio markė" style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Automobilio markė</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" name="metai" id="metai" type="text" placeholder="Automobilio metai" style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Automobilio pagaminimo metai</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" name="problema" id="problema" type="text" placeholder="problema" style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Problema</label>
+                            </div>
+                            
+                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Išsiųsti</button>
+                        </form>
+                </div>                
+            </div>
+
+        </section>
+        
+       
+        <!-- Footer-->
+        {{>footer}}
+    </body>
+</html>

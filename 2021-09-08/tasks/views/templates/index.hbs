@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  {{>head}}
+  <body>
+    {{>nav}}
+    <main class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Užduočių valdymas</h5>
+                    <hr>
+                    <table class="table">
+                        <tr>
+                            <th >Užduotis</th>
+                            <th class="text-center">Statusas</th>                            
+                            <th class="text-center">Prioritetas</th>
+                            <th class="text-center">Veiksmai</th>
+                        </tr>
+                        {{#each tasks}}
+                        <tr>
+                            <td class="align-middle">{{task}}</td>
+                            <td class="align-middle text-center">{{status}}</td>                            
+                            <td class="align-middle text-center">{{priority}}</td>
+
+                            <td class="d-flex flex-wrap justify-content-center">
+                                <a href="/edit?id={{_id}}" class="btn btn-success mb-1 ">Redaguoti</a>
+                                <a href="/delete?id={{_id}}" class="btn btn-danger mb-1 ms-2 me-2">Ištrinti</a>
+                                
+                            </td>
+                        </tr>
+                        {{~/each}}
+                       
+                    </table>
+                     <p class="mb-0"><b>Galimi statusai:</b></p>
+                    {{#each statuses}} {{name}}, {{~/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+     {{>foot}}   
+  </body>
+</html>

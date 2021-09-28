@@ -1,0 +1,33 @@
+<h3>Paieškos rezultatai frazei: {{s}}</h3>
+
+{{#if data}}
+<table>
+    <tr>
+        <th>Pavadinimas</th>
+        <th>Turinys</th>
+        <th>Data</th>
+    </tr>
+
+{{#each info}}
+    <tr>
+        <td>{{pavadinimas}}</td>
+        <td>{{turinys}}</td>
+        <td>{{data}}</td>
+        
+    </tr>
+    {{~/each}}
+</table>
+{{else}}
+<h5>Nerasta</h5>
+{{/if}}
+
+{{!-- {unless} šitą galim panaudoti jei neturim ką parašyt į if - --}}
+
+
+<p></p>
+<p>
+    <a href="/">Nauja paieška</a>
+</p>
+<p>
+    <a href="/irasai">Visi įrašai</a>
+</p>

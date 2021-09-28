@@ -1,0 +1,13 @@
+
+//-----su data
+router.get('/', (req, res, next)=>{
+  //Paimame įrašus iš duomenų bazės  
+  let siandiena=new Date().toISOString().slice(0,10);
+  db.collection('tasks').find({}).toArray().then((tasks)=>{
+    res.render('index',{
+      tasks:tasks,
+      siandiena:siandiena
+    });
+  }).catch((error)=>{
+    console.log("Klaida paimant uzduotis")
+  }); 

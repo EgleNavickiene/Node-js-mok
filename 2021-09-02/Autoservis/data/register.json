@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Aldutė",
+    "marke": "Renault",
+    "metai": "2012",
+    "problema": "springsta"
+  },
+  {
+    "name": "Marytė",
+    "marke": "Renault",
+    "metai": "2012",
+    "problema": "springsta"
+  },
+  { "name": "Jonas", "marke": "MB", "metai": "2000", "problema": "Neblizga" },
+  {
+    "name": "Petras",
+    "marke": "Miskvich",
+    "metai": "1987",
+    "problema": "numiro"
+  },
+  { "name": "Adomas", "marke": "ZAZ", "metai": "1960", "problema": "bezda" },
+  { "name": "Adomas", "marke": "ZAZ", "metai": "1960", "problema": "dingo" },
+  {
+    "name": "Asta",
+    "marke": "Opel",
+    "metai": "2012",
+    "problema": "kazkastokio"
+  },
+  {
+    "name": "vardas",
+    "marke": "marke",
+    "metai": "metai",
+    "problema": "problem"
+  },
+  { "name": "asfd", "marke": "tyjhm", "metai": "5446", "problema": "fsbv" }
+]
